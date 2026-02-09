@@ -3,7 +3,7 @@
 ### 📊 Project Overview
 This project is a comprehensive Business Intelligence solution designed to analyze emergency dispatch performance. Using **San Francisco Fire & EMS open data**, it simulates a real-world operational dashboard for a 911 center (similar to E-Comm 911).
 
-**Live Interactive View:** [[👉 Click here to view the Dashboard on Web](https://app.powerbi.com/links/2k8PmfR3YT?ctid=8322cefd-0a4c-4e2c-bde5-b17933e7b00f&pbi_source=linkShare))
+**Live Interactive View:** [👉 Click here to view the Dashboard on Web](https://app.powerbi.com/links/2k8PmfR3YT?ctid=8322cefd-0a4c-4e2c-bde5-b17933e7b00f&pbi_source=linkShare))
 
 ---
 
@@ -40,7 +40,7 @@ This project is a comprehensive Business Intelligence solution designed to analy
 ---
 
 ### 📂 Data Source
-* **Source:** [San Francisco Fire Department Calls for Service](https://data.sfgov.org/Public-Safety/Fire-Department-and-Emergency-Medical-Services-Dis/nuek-vuh3/about_data)
+* **Source:** [San Francisco Fire Department Calls for Service](https:/data.sfgov.org/Public-Safety/Fire-Department-and-Emergency-Medical-Services-Dis/nuek-vuh3/about_data)
 * **Dataset:** Includes Call Number, Unit ID, Call Type, Received DtTm, Dispatch DtTm, and On Scene DtTm.
 
 ### 📬 Contact
