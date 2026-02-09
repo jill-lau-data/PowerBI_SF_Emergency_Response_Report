@@ -26,29 +26,18 @@ This project is a comprehensive Business Intelligence solution designed to analy
 
 ### 🛠️ Technical Highlights
 
-#### 1. Advanced Data Modeling
-* Engineered a robust **Star Schema** to optimize query performance for millions of dispatch records.
-* Created a dedicated **Date Dimension** using M Code (Power Query) to enable Time Intelligence functions.
-
-#### 2. Complex DAX Calculations
-* **Response Time Analysis:** Calculated weighted averages for critical KPI tracking.
-* **Time Intelligence:** Implemented `CALCULATE` and `USERELATIONSHIP` to analyze data by both "Received Date" and "Dispatch Date".
+#### 1. Robust Data Engineering (ETL & Power Query)
+* **Dynamic Date Dimension:** Engineered a flexible Date Table using M Code that automatically adjusts its end date based on the latest Fact Table data, resolving "future date" slicer issues.
+* **Data Cleansing Logic:** Implemented defensive Power Query formulas to sanitize raw 9-1-1 data, specifically handling negative duration anomalies and null values to prevent skewed KPI calculations.
+* **Lifecycle Metrics Calculation:** Calculated 5 distinct timestamp metrics (Processing, Turnout, Travel, Response, Scene Duration) directly in the ETL layer to optimize report performance.
+  
+#### 2. Advanced DAX & Analytics
+* **Context Manipulation:** Utilized CALCULATE with REMOVEFILTERS to Engineer precise Time Intelligence measures (e.g., YoY % Change), solving complex filter interaction issues caused by month-level slicers.
 
 #### 3. UX & Interactivity
-* Designed **Drill-through** functionality to allow users to navigate from high-level trends to granular incident details.
-* Implemented dynamic filtering for different Unit Types (Engine, Truck, Medic).
+* **Diagnostic Drill-through:** Designed a deep-dive "Operational Analysis" page that allows users to seamlessly transition from high-level neighborhood trends to row-level incident details.
 
 ---
-
-### 🧹 Data Transformation & Quality Logic
-To ensure the accuracy of operational metrics, the following cleaning rules and logic were applied:
-* **🚫 Handling Anomalies (Negative Values):**
-    * Excluded records where *Scene Duration* or *Response Time* resulted in negative values (typically caused by manual entry errors or system sync issues).
-* **⚠️ Null Handling:**
-    * Implemented DAX logic (using `ISNOTBLANK`) to calculate averages only when both *Start* and *End* timestamps are valid, preventing skewed KPI results.
-* **📅 Dynamic Date Dimension:**
-    * Created a continuous `Dim_Date` table using M Code to support Time Intelligence functions (YoY, MoM analysis).
-    * **Range:** Covers the full dataset period from **Jan 2018 to Feb 2026**.
 
 ### 📂 Data Source
 * **Source:** [San Francisco Fire Department Calls for Service] - https://data.sfgov.org/Public-Safety/Fire-Department-and-Emergency-Medical-Services-Dis/nuek-vuh3/about_data
