@@ -65,7 +65,7 @@ To ensure the accuracy of operational metrics, the following cleaning rules and 
     * Total Response Time: On_Scene_DtTm - Received_DtTm
     * Scene Duration: Available_DtTm - On_Scene_DtTm
 
-* **KPI Targets (SLA Benchmarks):
+* **KPI Targets (SLA Benchmarks):**
     * High Priority: Response within 10 Minutes.
     * Medium Priority: Response within 15 Minutes.
     * Low Priority: Response within 20 Minutes.
