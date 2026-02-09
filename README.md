@@ -40,14 +40,35 @@ This project is a comprehensive Business Intelligence solution designed to analy
 
 ---
 
+### 🧹 Data Transformation & Quality Logic
+To ensure the accuracy of operational metrics, the following cleaning rules and logic were applied:
+* **🚫 Handling Anomalies (Negative Values):**
+    * Excluded records where *Scene Duration* or *Response Time* resulted in negative values (typically caused by manual entry errors or system sync issues).
+* **⚠️ Null Handling:**
+    * Implemented DAX logic (using `ISNOTBLANK`) to calculate averages only when both *Start* and *End* timestamps are valid, preventing skewed KPI results.
+* **📅 Dynamic Date Dimension:**
+    * Created a continuous `Dim_Date` table using M Code to support Time Intelligence functions (YoY, MoM analysis).
+    * **Range:** Covers the full dataset period from **Jan 2018 to Feb 2026**.
+
 ### 📂 Data Source
 * **Source:** [San Francisco Fire Department Calls for Service] - https://data.sfgov.org/Public-Safety/Fire-Department-and-Emergency-Medical-Services-Dis/nuek-vuh3/about_data
 * **Dataset:** Includes Call Number, Unit ID, Call Type, Received DtTm, Dispatch DtTm, and On Scene DtTm.
 
 ### 📂 Data Documentation
-To ensure clarity on the metrics and column definitions used in this analysis, I have included a detailed Data Dictionary:
-👉 [**View Data Dictionary**](./DataDictionary.xlsx) 
-*(Contains definitions for Call Types, Unit IDs, and Timestamp Logic)*
+* **Source Dictionary:** [👉 View Original Data Dictionary](./DataDictionary.xlsx)
+    *(Official definitions for raw columns provided by SF Open Data)*
+
+* **Key Calculated Metrics (My Logic):**
+    * Call Processing Time: Dispatch_DtTm - Received_DtTm
+    * Turnout Time: Response_DtTm - Dispatch_DtTm
+    * Travel Time: On_Scene_DtTm - Response_DtTm
+    * Total Response Time: On_Scene_DtTm - Received_DtTm
+    * Scene Duration: Available_DtTm - On_Scene_DtTm
+
+* **KPI Targets (SLA Benchmarks):
+    * High Priority: Response within 10 Minutes.
+    * Medium Priority: Response within 15 Minutes.
+    * Low Priority: Response within 20 Minutes.
 
 ### 📬 Contact
 * **Jill Lau**
