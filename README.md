@@ -40,7 +40,7 @@ This project is a comprehensive Business Intelligence solution designed to analy
 ---
 
 ### 📂 Data Source
-* **Source:** [San Francisco Fire Department Calls for Service](https:/data.sfgov.org/Public-Safety/Fire-Department-and-Emergency-Medical-Services-Dis/nuek-vuh3/about_data)
+* **Source:** [San Francisco Fire Department Calls for Service](https://data.sfgov.org/Public-Safety/Fire-Department-and-Emergency-Medical-Services-Dis/nuek-vuh3/about_data)
 * **Dataset:** Includes Call Number, Unit ID, Call Type, Received DtTm, Dispatch DtTm, and On Scene DtTm.
 
 ### 📬 Contact
