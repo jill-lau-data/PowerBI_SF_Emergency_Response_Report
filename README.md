@@ -44,6 +44,11 @@ This project is a comprehensive Business Intelligence solution designed to analy
 * **Source:** [San Francisco Fire Department Calls for Service] - https://data.sfgov.org/Public-Safety/Fire-Department-and-Emergency-Medical-Services-Dis/nuek-vuh3/about_data
 * **Dataset:** Includes Call Number, Unit ID, Call Type, Received DtTm, Dispatch DtTm, and On Scene DtTm.
 
+### 📂 Data Documentation
+To ensure clarity on the metrics and column definitions used in this analysis, I have included a detailed Data Dictionary:
+👉 [**View Data Dictionary**](./DataDictionary.xlsx) 
+*(Contains definitions for Call Types, Unit IDs, and Timestamp Logic)*
+
 ### 📬 Contact
 * **Jill Lau**
 * LinkedIn: [Jill Lau](https://www.linkedin.com/in/jill-data)
