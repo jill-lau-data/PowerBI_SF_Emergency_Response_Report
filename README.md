@@ -5,7 +5,7 @@ This project is a comprehensive Business Intelligence solution designed to analy
 
 **🚀 Quick Access:**
 * [**👉 View Live Interactive Dashboard**](https://app.powerbi.com/links/2k8PmfR3YT?ctid=8322cefd-0a4c-4e2c-bde5-b17933e7b00f&pbi_source=linkShare) *(Best for viewing visuals)*
-* [**📂 Download .pbix Source File**](https://drive.google.com/file/d/1H-dLFQVHeCoH5U_2R1KybBpTa0uoMbhT/view?usp=sharing) *(Hosted on Drive due to 300MB file size)*
+* [**📂 Download .pbix Source File**](https://drive.google.com/file/d/1MmV1hip2efcc5mXpUCVW0X9TgG5cG44J/view?usp=sharing) *(Hosted on Drive due to 300MB file size)*
 ---
 
 ### 📷 Dashboard Preview
