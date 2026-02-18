@@ -27,12 +27,11 @@ This project is a comprehensive Business Intelligence solution designed to analy
 ### 🛠️ Technical Highlights
 
 #### 1. Robust Data Engineering (ETL & Power Query)
-* **Dynamic Date Dimension:** Engineered a flexible Date Table using M Code that automatically adjusts its end date based on the latest Fact Table data, resolving "future date" slicer issues.
 * **Data Cleansing Logic:** Implemented defensive Power Query formulas to sanitize raw 9-1-1 data, specifically handling negative duration anomalies and null values to prevent skewed KPI calculations.
 * **Lifecycle Metrics Calculation:** Calculated 5 distinct timestamp metrics (Processing, Turnout, Travel, Response, Scene Duration) directly in the ETL layer to optimize report performance.
   
 #### 2. Advanced DAX & Analytics
-* **Context Manipulation:** Utilized CALCULATE with REMOVEFILTERS to Engineer precise Time Intelligence measures (e.g., YoY % Change), solving complex filter interaction issues caused by month-level slicers.
+* **Context Manipulation:** Utilized CALCULATE with REMOVEFILTERS to Engineer precise Time Intelligence measures (e.g., YoY % Change).
 
 #### 3. UX & Interactivity
 * **Diagnostic Drill-through:** Designed a deep-dive "Operational Analysis" page that allows users to seamlessly transition from high-level neighborhood trends to row-level incident details.
